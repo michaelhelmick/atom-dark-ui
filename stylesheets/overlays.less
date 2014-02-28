@@ -18,8 +18,9 @@
     background-color: lighten(@overlay-background-color, 3%);
 
     li {
+      background: #232629;
       padding: @component-padding;
-      border-bottom: 1px solid @overlay-background-color;
+    //   border-bottom: 1px solid @overlay-background-color;
 
       &.two-lines { padding: @component-padding/2 @component-padding; }
 
@@ -32,6 +33,7 @@
       }
 
       &.selected {
+        background-color: #4182c4;
         .status.icon {
           color: @text-color-selected;
         }

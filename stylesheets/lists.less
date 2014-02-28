@@ -123,3 +123,23 @@ li.ui-draggable-dragging, li.ui-sortable-helper {
   background: @background-color-highlight;
   box-shadow: 0 0 1px @base-border-color;
 }
+
+
+
+// Custom styles, not sure if there is a "correct" place to put these
+
+.icon-file-directory:before {
+    color: #3275c7;
+}
+
+.list-tree li.list-nested-item.status-modified > .list-item .icon-file-directory:before {
+    color: #ff982d;
+}
+
+.icon-file-text:before, .icon-book:before {
+    content: "";
+}
+
+.list-tree.has-collapsable-children .list-nested-item > .list-tree > li, .list-tree.has-collapsable-children .list-nested-item > .list-group > li {
+    padding-left: 12px;
+}

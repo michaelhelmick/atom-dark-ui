@@ -1,10 +1,10 @@
 {
-  "name": "atom-dark-ui",
+  "name": "flatland-dark",
   "theme": "ui",
-  "version": "0.23.0",
-  "description": "Default dark theme for interface components",
+  "version": "0.0.0",
+  "description": "A port of the Sublime Text/TextMate Dark UI Theme",
   "license": "MIT",
-  "repository": "https://github.com/atom/atom-dark-ui",
+  "repository": "https://github.com/michaelhelmick/flatland-dark-ui/",
   "engines": {
     "atom": ">0.40.0"
   }
