@@ -22,7 +22,7 @@
     left: 0px;
     width: 100%;
     background-color: @tab-background-color-active;
-    border-top: 1px solid @tab-border-color;
+    border-top: 8px solid @tab-border-color;
     border-bottom: 1px solid @tab-bar-bottom-border-color;
   }
 
@@ -36,13 +36,12 @@
     margin-left: 15px;
     border-top-right-radius: @tab-radius;
     box-shadow: inset -1px -1px 1px rgba(0,0,0, .05);
-    -webkit-transform: skewX(@tab-skew);
     transition: color .1s ease-in;
     box-shadow: inset -1px 1px 0 @tab-border-color, 4px 0px 4px rgba(0,0,0,.1);
     border: none;
 
     &, &:before {
-      background-image: -webkit-linear-gradient(top, lighten(#333, 7%), #333);
+      background: #32363b;
     }
 
     &:before {
@@ -51,27 +50,35 @@
       top: 0;
       left: -18px;
       height: @tab-height;
-      width: 40px;
+      width: 18px;
       border-top-left-radius: @tab-radius;
-      -webkit-transform: skewX(133deg);
       box-shadow: inset 1px 1px 0 @tab-border-color, -4px 0px 4px rgba(0,0,0,.1);
       border: none;
     }
 
     .close-icon {
       z-index: 3;
-      line-height: @tab-height;
-      -webkit-transform: skewX(-@tab-skew);
+      line-height: 12px;
+      background: #7f8285;
+      color: #3f4345;
+      width: 12px;
+      height: 12px;
+      text-align: center;
+      border-radius: 2px;
+      top: 6px;
+
+      &:hover{
+          background:#dbdbdb;
+      }
     }
     &.modified:not(:hover) .close-icon {
-      top: @tab-height/2 - @modified-icon-width/2 + 1px;
+      top: 9px;
       right: 14px;
       width: @modified-icon-width;
       height: @modified-icon-width;
     }
 
     .title{
-      -webkit-transform: skewX(-@tab-skew);
     }
 
     &:first-child {
@@ -92,11 +99,11 @@
     }
 
     .close-icon {
-      line-height: @tab-height - 1px;
+      line-height: 5px;
     }
 
     &, &:before {
-      background-image: -webkit-linear-gradient(top, lighten(@tab-background-color-active, 7%), @tab-background-color-active);
+      background: #4a4e52;
       height: @tab-height + 1px;
     }
 
